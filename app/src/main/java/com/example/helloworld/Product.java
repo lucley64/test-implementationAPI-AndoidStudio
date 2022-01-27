@@ -134,6 +134,15 @@ public class Product {
         return texteEmbalage;
     }
 
+
+    /**
+     *
+     * @return L'image du produit.
+     */
+    public String getImage() {
+        return image;
+    }
+
     /**
      * Créé et renvoit un Produit à partir d'un code barres. Seulement si les permissions internet
      * ont été accordées.
