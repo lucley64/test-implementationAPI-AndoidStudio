@@ -43,6 +43,7 @@ public class Product {
     private String nom;
     private List<String> marques;
     private String texteEmbalage;
+    private String image;
 
 
     /**
@@ -74,6 +75,9 @@ public class Product {
                                     break;
                                 case "packaging_text_fr":
                                     this.texteEmbalage = reader.nextString();
+                                    break;
+                                case "image_url":
+                                    this.image = reader.nextString();
                                     break;
                                 default:
                                     reader.skipValue();
